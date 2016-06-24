@@ -1,0 +1,102 @@
+﻿@charset "utf-8";
+/***************
+本文件适用于蜀海供应链销售工具Ipad端样式。
+版本：V1.0.1
+开发：Zhang Tianheng
+时间：2016-04
+**************/
+
+/*页面基础属性*/
+html,body{height: 100%;width: 100%;}
+body,div,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, span, a{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset, img, iframe{border:0}
+ol, ul{list-style:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+blockquote:before, blockquote:after, q:before, q:after{content:''}
+abbr, acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}  sub{vertical-align:text-bottom}
+input,textarea,select{*font-size:100%;-webkit-appearance:none;vertical-align: middle;}
+a{text-decoration:none;outline: none;}a:hover{text-decoration:none;}
+.clearfix{zoom:1}
+.clearfix:after{display:block;clear:both;content:'\20'}
+:focus { outline:0; }
+a:focus,input:focus{outline:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.pull-left{float:left} .pull-right{float:right}
+.show{display: block;} .hide{display: none;}
+.text-left {text-align: left;}  .text-right {text-align: right;}  .text-center {text-align: center;}  .text-justify {text-align: justify;}  .text-nowrap {white-space: nowrap;}  .text-lowercase {text-transform: lowercase;}
+/*页面框架属性*/
+.container{margin: auto;}
+.col-md-1,.col-md-2,.col-md-4{float: left;}
+.col-md-1{width: 100%;}
+.col-md-2{width: 50%;}
+.col-md-4{width: 25%;}
+/*页面结构属性*/
+header{position: fixed; height: 65px; background:#F1F1F1; left: 0;top: 0; z-index: 999; width: 100%;}
+.top-box{text-align: center;height: 50px; margin: 5px 0;position: relative;}
+.top-box img{height: 100%;}
+.top-box a i{font-size: 1.8rem;line-height: 50px;color: #666;height: 50px; display: inline-block;}
+.user{position: absolute;left: 1rem;top: 0;z-index: 99999;}
+.jijia{position: absolute;right: 1rem;top: 0;z-index: 99998;}
+.jijia a{display:block;height:39px; width:3rem;text-align:right;}
+.shopcart-pop{position: absolute;top:0;right:2.3rem; display: inline-block;*zoom: 1;*display: inline; padding: 3px 4px;  font-size: 12px;  line-height: 12px;  color: #fff;  background: #f1004a;  border-radius: 6px 6px 0 6px;  min-width: 12px;  text-align: center; z-index: 99999}
+.top-line{height: 5px;line-height: 0;background: url("../images/top-line.jpg") no-repeat;background-size: cover;}
+
+footer{position: fixed; height: 50px; background:#F1F1F1; left: 0;bottom: 0; z-index: 999; width: 100%;}
+
+
+
+/*icon font*/
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1459417979'); /* IE9*/
+    src: url('iconfont.eot?t=1459417979#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff?t=1459417979') format('woff'), /* chrome, firefox */
+    url('iconfont.ttf?t=1459417979') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1459417979#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {font-family:"iconfont" !important;  font-style:normal;  -webkit-font-smoothing: antialiased;  -webkit-text-stroke-width: 0.2px;  -moz-osx-font-smoothing: grayscale;}
+
+.icon-shuxing4:before { content: "\e601"; }
+.icon-shuxing8:before { content: "\e61a"; }
+.icon-yonghu:before { content: "\e608"; }
+.icon-shuxing1:before { content: "\e617"; }
+.icon-class9:before { content: "\e605"; }
+.icon-shuxing10:before { content: "\e61e"; }
+.icon-wu:before { content: "\e61b"; }
+.icon-class1:before { content: "\e60b"; }
+.icon-shuxing9:before { content: "\e61c"; }
+.icon-shuxing6:before { content: "\e604"; }
+.icon-mima:before { content: "\e60a"; }
+.icon-class5:before { content: "\e60d"; }
+.icon-class8:before { content: "\e60e"; }
+.icon-shuxing7:before { content: "\e607"; }
+.icon-xunjia:before { content: "\e602"; }
+.icon-class10:before { content: "\e60f"; }
+.icon-shangpinfenlei:before { content: "\e618"; }
+.icon-sousuo:before { content: "\e620"; }
+.icon-class6:before { content: "\e610"; }
+.icon-class3:before { content: "\e611"; }
+.icon-fenlei:before { content: "\e615"; }
+.icon-shuxingfenlei:before { content: "\e616"; }
+.icon-shanchu:before { content: "\e619"; }
+.icon-shuxing5:before { content: "\e606"; }
+.icon-shuxing2:before { content: "\e609"; }
+.icon-class4:before { content: "\e612"; }
+.icon-tuichu:before { content: "\e61d"; }
+.icon-shuxing3:before { content: "\e603"; }
+.icon-kong:before { content: "\e61f"; }
+.icon-class7:before { content: "\e613"; }
+.icon-jijiaqi:before { content: "\e600"; }
+.icon-class2:before { content: "\e614"; }
+.icon-quanbu:before { content: "\e60c"; }
+
+.login-box{width: 450px; height: 380px;background: #fff;border-radius: 10px;position: fixed;top: 50%;left: 50%;transform:translate(-225px,-190px);}
+.logo-box{padding: 2rem 0;text-align: center;}
+.fonrm-box{width: 75%;margin: auto;}
+.fonrm-box li{height: 2.6rem; margin-bottom: 1.2rem;position: relative;}
+.fonrm-box li.text{border: solid 1px #8FC31F;border-radius:1.3rem;padding-left: 3rem;}
+.fonrm-box li.text i{color: #8FC31F;font-size: 1.5rem;position: absolute;left: 0.5em;line-height: 2.6rem;}
+.fonrm-box li.text input{width: 90%;line-height: 2.5rem;border: none;font-size: 1rem;}
+.login-but{background: #005F95;line-height: 2.6rem;border-radius: 1.3rem;text-align: center;color: #fff;font-size: 1.2rem;display: block;}

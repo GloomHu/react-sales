@@ -1,0 +1,149 @@
+﻿@charset "utf-8";
+/***************
+本文件适用于蜀海供应链销售工具Ipad端样式。
+版本：V1.0.1
+开发：Zhang Tianheng
+时间：2016-04
+**************/
+.left-nav{position: fixed;top: 65px;bottom: 0;left: 0;width: 90px;background: #0C628E;z-index: 999;overflow: hidden;}
+.nav-box{position: relative;width: 100%;height: 100%;}
+.nav-tab{line-height: 3rem;position: absolute;top: 0;left: 0;width: 100%;z-index: 9999;}
+.nav-tab a{display: inline-block;width: 50%;word-spacing:0;margin-right: -4px;color: #fff;font-size: 1.5rem; text-align: center;}
+.nav-tab a.fenlei{background: #0C628E;}
+.nav-tab a.shuxing{background: #8EC31F;}
+.nav-list{position: absolute;width: 100%; left: 0; top: 0;bottom: 0;z-index: 9998;}
+.nav-list ul{padding-top:3.2rem; }
+.nav-list li{text-align: center;padding: 6px 0;}
+.nav-list li.on{background:rgba(255,255,255,0.3);}
+.nav-list a{color: #fff;}
+.nav-list li a.on{color: #8EC31F;}
+.fenlei-box i{font-size: 1.5rem;}
+.shuxing-box i{font-size: 2rem;}
+.shuxing-box i.icon-shuxing1{font-size: 1.6rem}
+.shuxing-box i.icon-shuxing3{font-size: 1.6rem}
+.shuxing-box i.icon-shuxing7{font-size: 1.6rem}
+.shuxing-box i.icon-shuxing8{font-size: 1.6rem}
+.shuxing-box i.icon-shuxing9{font-size: 2rem}
+.nav-list b{font-size: 0.8rem;display: block;font-weight: normal;line-height: 1.1rem;}
+.fenlei-box{background: #0C628E;-webkit-transform: translate3d(-100%,0,0);  transform: translate3d(-100%,0,0);  -webkit-transition: -webkit-transform .2s cubic-bezier(0,0,.25,1);  transition: transform .2s cubic-bezier(0,0,.25,1);}
+.fenlei-box.show {-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.shuxing-box{background: #8EC31F;-webkit-transform: translate3d(100%,0,0);  transform: translate3d(100%,0,0);  -webkit-transition: -webkit-transform .2s cubic-bezier(0,0,.25,1);  transition: transform .2s cubic-bezier(0,0,.25,1);}
+.shuxing-box.show {-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.class-box{position: fixed;top: 65px;left: 0;right: 0;bottom: 0;z-index: 99; background: rgba(255,255,255,0.5);-webkit-transform: translate3d(-100%,0,0);  transform: translate3d(-100%,0,0);  -webkit-transition: -webkit-transform .2s cubic-bezier(0,0,.25,1);  transition: transform .2s cubic-bezier(0,0,.25,1);}
+.class-box.show {-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+.class-list{margin-left: 90px;height: 100%;width: 40%;background: #F7F7F7;border-right: solid 1px #c7c7c7; padding: 1rem;box-sizing: content-box;overflow: auto;}
+.class-list a{color: #0C628E;}
+.class-list h3{border-bottom: solid 1px #0C628E;font-weight: bold;font-size: 1rem; line-height: 2rem;}
+.class2-box{margin:5px 10px; font-size: 1rem;line-height: 2rem;border-bottom: dotted 1px #0C628E; padding-bottom: 10px;}
+.class3-box{padding-top: 5px; font-size: 0.8rem;line-height: 1.5rem;}
+.class3-box a{display: inline-block;margin:0 10px 0 10px;}
+
+.main-box{padding: 65px 0 0 90px;}
+.list-bar{border-bottom: solid 1px #E9E9E9;line-height: 3rem;padding-left: 15px;color: #4A4A4A;position: relative;}
+.list-bar a{color: #4A4A4A; font-size: 0.9rem;padding: 0 5px;}
+.list-bar a.on{font-weight: bold;color: #0C628E;}
+.list-search{position: absolute;right: 10px; top: 0.5rem;border: solid 1px #E6E6E6;border-radius: 5px; height: 2rem;line-height: 2rem;padding: 0 10px;}
+.list-search a{font-size: 1.2rem;}
+.search-text{border: none;line-height: 1.6rem;margin-top: -3px;}
+.list-box{padding-bottom: 15px;}
+.list-box li{width: 25%; float: left;padding-top: 15px;}
+.goods-box{width: 200px;height: 295px;border: solid 1px #E6E6E6;margin: auto;}
+.g-img img{width: 100%;}
+.g-name{margin: 5px; color: #535353;font-size: 1rem;height: 2.2rem;overflow: hidden;}
+.g-note{font-size: 0.8rem;color: #9B9B9B;margin: 5px 5px 0;}
+
+.goods-popBg{position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 99998;display: none;background: rgba(0,0,0,0.3)}
+.goods-popBg.show{display: block;}
+.goods-main{width: 750px;height: 450px;position: fixed;top: 50%;left: 50%;margin:-226px 0 0 -376px;background: #fff;border: solid 1px #666;border-radius: 5px; -webkit-transform: translate3d(175%,0,0);  transform: translate3d(175%,0,0);  -webkit-transition: -webkit-transform .2s cubic-bezier(0,0,.25,1);  transition: transform .2s cubic-bezier(0,0,.25,1);z-index: 99999;}
+.goods-main.show{-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+.goods-detail{padding: 24px;}
+.goods-img{width: 400px;height:400px; border: solid 1px rgba(151,151,151,0.2);overflow: hidden;float: left;}
+.goods-img img{width: 100%;}
+.goods-info{float: left;margin-left: 1.5rem;color: #535353;width: 275px;}
+.goods-info h2{font-size: 1.2rem;}
+.g-i-i{margin-top: 1.5rem; line-height: 1.6rem;font-size: 0.8rem; }
+.g-i-unit{margin-top: 1.5rem;}
+.g-i-unit a{color: #535353; display: inline-block;font-size: 1.15rem;padding: 8px 10px;border: solid 1px #9B9B9B;border-radius: 3px;}
+.g-i-unit a.on{border: solid 2px #8EC31F;color: #8EC31F;padding: 6px 8px;}
+.g-i-unit p{margin-bottom: 10px;}
+.g-i-but{margin-top: 2rem;}
+.g-i-but a{line-height: 3rem;font-size: 1.2rem;color: #fff;padding: 0 3rem;display: inline-block;background: #8EC31F;border-radius: 5px;}
+
+.page-main{padding-top: 65px;}
+.page-bar{border-bottom: solid 1px #E9E9E9;line-height: 3rem;padding:0 15px;color: #4A4A4A;height: 3rem;}
+.page-bar a{color: #4A4A4A; font-size: 0.8rem;float: right;}
+.page-bar b{font-size: 1rem;font-weight: bold;color: #0C628E;float: left;}
+.enquiry-main{padding: 15px 20px;}
+
+.table-list{width: 100%;}
+.table-list th{border-bottom: solid 2px #9B9B9B;font-size: 1rem;color: #4A4A4A;padding:5px 0 10px;}
+.table-list th.name{text-align: left;width: 330px;}
+.table-list td{border-bottom: solid 1px #E6E6E6;padding:10px 0; text-align: center;color: #9B9B9B;font-size: 0.8rem;}
+.table-list td.text-left{text-align: left;}
+.table-list td a{color: #8FC31F;}
+.table-list td i{font-size: 1.2rem;}
+.list-img{border: solid 1px #e6e6e6;width: 50px; height: 50px;overflow: hidden;float: left;}
+.list-img img{width: 100%;}
+.list-name{float: left; margin-left: 10px; text-align: left;width:260px;}
+
+.totle-box{height: 49px;line-height: 49px;font-size: 0.9rem;color: #666;}
+.totle-num{float: left;padding-left: 15px;}
+.totle-num span{color: #f1004a;}
+.totle-but{float: right;padding-right: 15px;font-size: 0.9rem;}
+.totle-but span{padding-right: 15px;}
+.text-input{line-height: 1.8rem;border: solid 1px #d3d3d3;border-radius: 3px;text-align: center;}
+.customer-input{line-height: 2.2rem;border: solid 1px #d3d3d3;padding: 0 10px;border-radius: 3px;width: 20rem;}
+.totle-click{display: inline-block;border-radius: 3px;background: #8FC31F;line-height: 2.2rem;padding: 0 25px;color: #fff;border: solid 1px #8FC31F;}
+
+.my-nav{background: #F1F1F1;border-right: solid 1px #c7c7c7;}
+.my-nav-list{text-align: center;}
+.my-nav-list li{padding: 10px 0;}
+.my-nav-list a{color: #666;}
+.my-nav-list i{font-size: 2rem;}
+.my-nav-list b{font-size: 0.8rem;display: block;font-weight: normal;margin-top: 5px;}
+.enquiry-info{line-height: 1.5rem;font-size: 0.9rem; color: #666666;border-bottom: solid 1px #9B9B9B;margin-bottom: 10px;padding-bottom: 10px;}
+
+.list-kong{padding: 8rem 0; text-align: center;}
+.list-kong i{font-size: 6rem;color: #f1004a;}
+.list-kong p{font-size: 1rem;color: #9B9B9B;}
+
+
+.spinner {width: 150px; text-align: center;position: fixed;left: 50%;top: 50%;}
+
+.spinner > div {
+    width: 26px;
+    height: 26px;
+    background-color: #67CF22;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0.0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    } 40% {
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+      }
+}
