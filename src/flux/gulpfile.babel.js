@@ -161,13 +161,7 @@ gulp.task('html', () => {
         .pipe(gulp.dest(paths.root_dist));
 });
 
-gulp.task('debug', () => {
-    gulp.run('js');
-    gulp.run('css');
-    gulp.run('font');
-    gulp.run('img');
-    gulp.run('html');
-});
+gulp.task('debug',['browserSync','js','css','font','img','html']);
 
 gulp.task('start', ['browserSync', 'debug']);
 gulp.task('default', ['browserSync', 'debug']);
